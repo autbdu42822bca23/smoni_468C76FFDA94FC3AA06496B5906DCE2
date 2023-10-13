@@ -1,6 +1,24 @@
-def fac(no):
-  if no==0:
-   return 1
-  else:
-   return no*fac(no-1)
-print(fac(8))
+class player:
+
+  def play(self):
+    print("The player is playing cricket")
+
+
+class Batsman(player):
+
+  def play(self):
+    print("The same bastman is batting")
+
+
+class Bowler(player):
+
+  def play(self):
+    print("The boeler is bowling")
+
+
+batsman = Batsman()
+bowler = Bowler()
+
+batsman.play()
+bowler.play()
+
